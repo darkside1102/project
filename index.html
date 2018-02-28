@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="new_project/style.css">
+</head>
+<body>
+	<header class="header">
+		<a class="header__link" href="#"><img class="header__img-menu" src="new_project/img/icon-png2x.png" width="18px" height="12px" alt="menu"></a>
+		<div class="btn-info">
+			<a class="btn-info__link" href="#">Договор 332/2017/01 от 23.05.17</a>
+			<div class="btn-info__wrap">
+				<button class="btn-info__btn" value="счет">счет</button>
+				<h2 class="btn-info__number">332/2017/01 от 23.05.17</h2>
+			</div>
+			<p class="btn-info__sum">Оплачено 0 из 48 000 &#8381;<br>
+			Просрочен на 7 дней</p>
+			<ul class="main-menu__nav">
+				<li class="main-menu__item main-menu__item_active"><a class="main-menu__link main-menu__link_active" href="#">Счет</a></li>
+				<li class="main-menu__item"><a class="main-menu__link" href="#">Акты</a></li>
+				<li class="main-menu__item"><a class="main-menu__link" href="#">Комментарии</a></li>
+			</ul>
+		</div>	
+		<div class="header-logo">
+			<button class="header-logo__btn-cb">cb</button> 
+			<img class="header-logo__logo-redact" src="" alt="">
+		
+			<span class="header-logo__menu">&#8942;</span> 
+		</div>
+	</header>
+	<section class="container">
+		<div class="subject-info">
+			<div class="responsible">
+				<select class="responsible__info" name="name" id="name">
+					<option value="">Петрова Светлана</option>
+				</select>
+			</div>	
+			<div class="period">				
+				<select class="period__date" name="" id="">
+					<option value="">1 год, 3 месяца, 24 дня</option>
+				</select>			
+			</div>
+		</div>	
+		<form class="subjects-info" action="">
+			<label class="subjects-info__label" for="">Поставщик</label>
+			<select class="subjects-info__select" name="" id="">
+				<option value="">ООО "СПС "Право.ру"</option>	
+			</select>
+		
+			<label class="subjects-info__label" for="date">Выставлен</label>
+				<input class="subjects-info__date" type="date" id="date">
+			<label class="subject-info__label" for="">Срок оплаты</label>
+				<input class="subjects-info__date" type="date">
+			<label class="subjects-info__label" for="">Расчет НДС</label>
+			<select class="subjects-info__select" name="" id="">
+				<option value="">Сверх суммы</option> 
+			</select>
+			<label class="subjects-info__label" for="">Период доступа
+				<input class="subjects-info__date" type="text">
+			</select>
+			</label>
+		</form>
+		</div>
+	</section>
+</body>
+</html>

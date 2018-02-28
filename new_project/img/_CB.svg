@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 9" width="14" height="9">
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 11px;letter-spacing: 0px;fill: rgb(255,255,255);font-family: "Roboto";font-weight: bold } 
+	</style>
+	<text id="
+CB" style="transform: matrix(1,0,0,1,-0.109,8)" >
+		<tspan x="0" y="0" class="txt0">CB</tspan>
+	</text>
+</svg>
