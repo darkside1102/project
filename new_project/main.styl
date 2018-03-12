@@ -1,42 +1,42 @@
 .container
 	margin 15px 65px
 .subject-info
+	width 100%
 	display flex
-	justify-content space-between		
-.responsible
-	width 70%
+	justify-content flex-start
 	border-bottom 1px solid #dadfe0
-	position relative
-	&::before
-		content "Ответственный"
-		color rgb(65,131,215)
-		font-size 11px
-		position absolute
-		z-index 1
-		top 10px
-		left 15px
-	&__info
-		border none
+	&__responsible
+		width 70%
+		position relative
+		&::before
+			content "Ответственный"
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px
+	&__responsible-info
 		width 100%
+		border none
 		padding 30px 15px 10px
 		background-image url('img/select-logo.png')
 		background-repeat no-repeat
 		background-position 98%
 		appearance none
 		border-right 1px solid #dadfe0
-.period
-	width 30%
-	border-bottom 1px solid #dadfe0
-	position relative
-	&::before
-		content "Период действия"
-		color rgb(65,131,215)
-		font-size 11px
-		position absolute
-		z-index 1
-		top 10px
-		left 15px				
-	&__date
+	&__period
+		width 30%
+		position relative
+		&::before
+			content "Период действия"
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px				
+	&__period-date
 		width 100%
 		padding 30px 15px 10px 
 		border none
@@ -44,8 +44,95 @@
 		background-image url('img/select-logo.png')
 		background-repeat no-repeat
 		background-position 96%
-			
-			
-
-
-		
+.subject
+	width 100%
+	display flex
+	justify-content flex-start
+	border-bottom 1px solid #dadfe0
+	&__provider
+		width 40%
+		position relative
+		border-right 1px solid #dadfe0			
+		&::before
+			content "Поставщик"
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px
+	&__select-provider
+		width 100%
+		padding 30px 15px 10px 
+		appearance none
+		border none
+		background-image url('img/select-logo.png')
+		background-repeat no-repeat
+		background-position 96%				
+	&__exposed
+		width 15%
+		position relative
+		border-right 1px solid #dadfe0
+		&::before
+			content "Выставлен"	
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px	 
+	&__exposed-date
+		width 87%
+		border none
+		padding 25px 15px 10px 
+	&__duedate
+		width 15%
+		position relative
+		border-right 1px solid #dadfe0
+		&::before
+			content "Срок оплаты"	
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px		
+	&__duedate-date
+		width 87%
+		padding 25px 15px 10px 
+		border none
+	&__calculation
+		width 15%
+		position relative
+		border-right 1px solid #dadfe0
+		&::before
+			content "Расчет НДС"	
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px	
+	&__сalculation-summ
+		width 100%
+		padding 30px 15px 10px 
+		appearance none
+		border none
+		background-image url('img/select-logo.png')
+		background-repeat no-repeat
+		background-position 96%
+	&__acces
+		width 15%
+		position relative
+		&::before
+			content "Период доступа"	
+			color #dadfe0
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px		
+	&__acces-date
+		width 87%
+		padding 30px 15px 10px 
+		border none			

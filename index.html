@@ -32,37 +32,48 @@
 	</header>
 	<section class="container">
 		<div class="subject-info">
-			<div class="responsible">
-				<select class="responsible__info" name="name" id="name">
+			<div class="subject-info__responsible">
+				<label>
+				<select class="subject-info__responsible-info" name="name" id="name">
 					<option value="">Петрова Светлана</option>
 				</select>
+				</label>
 			</div>	
-			<div class="period">				
-				<select class="period__date" name="" id="">
+			<div class="subject-info__period">	
+				<label>			
+				<select class="subject-info__period-date" name="" id="">
 					<option value="">1 год, 3 месяца, 24 дня</option>
-				</select>			
+				</select>
+				</label>
 			</div>
-		</div>	
-		<form class="subjects-info" action="">
-			<label class="subjects-info__label" for="">Поставщик</label>
-			<select class="subjects-info__select" name="" id="">
-				<option value="">ООО "СПС "Право.ру"</option>	
-			</select>
-		
-			<label class="subjects-info__label" for="date">Выставлен</label>
-				<input class="subjects-info__date" type="date" id="date">
-			<label class="subject-info__label" for="">Срок оплаты</label>
-				<input class="subjects-info__date" type="date">
-			<label class="subjects-info__label" for="">Расчет НДС</label>
-			<select class="subjects-info__select" name="" id="">
-				<option value="">Сверх суммы</option> 
-			</select>
-			<label class="subjects-info__label" for="">Период доступа
-				<input class="subjects-info__date" type="text">
-			</select>
-			</label>
-		</form>
+		</div>		
+		<div class="subject">					
+			<div class="subject__provider">
+				<label>
+				<select class="subject__select-provider" name="" id="">
+					<option value="">ООО "СПС "Право.ру"</option>	
+				</select>
+				</label>
+			</div>		
+			<div class="subject__exposed">
+				<input class="subject__exposed-date" type="date" id="date">
+			</div>	
+			<div class="subject__duedate">
+				<input class="subject__duedate-date" type="date">
+			</div>	
+			<div class="subject__calculation">
+				<label>
+				<select class="subject__сalculation-summ" name="" id="">
+					<option value="">Сверх суммы</option> 
+				</select>
+				</label>
+			</div>
+			<div class="subject__acces">
+				<input class="subject__acces-date" type="text">
+			</div>			
 		</div>
 	</section>
+	<section class="container">
+	</section>	
 </body>
 </html>
