@@ -1,13 +1,18 @@
+.left-flex
+	display flex
+	justify-content flex-start
+	flex-wrap wrap
+	width 1000px
+.bottom-flex
+	display flex
+	border-bottom 1px solid #dadfe0		
 .container
 	margin 15px 65px
 .subject-info
-	width 100%
-	display flex
-	justify-content flex-start
-	border-bottom 1px solid #dadfe0
+	width 1000px
 	&__responsible
-		width 70%
 		position relative
+		border-bottom 1px solid #dadfe0
 		&::before
 			content "Ответственный"
 			color rgb(65,131,215)
@@ -17,42 +22,17 @@
 			top 10px
 			left 15px
 	&__responsible-info
-		width 100%
-		border none
+		width 1000px
 		padding 30px 15px 10px
+		border none
 		background-image url('img/select-logo.png')
 		background-repeat no-repeat
 		background-position 98%
 		appearance none
 		border-right 1px solid #dadfe0
-	&__period
-		width 30%
-		position relative
-		&::before
-			content "Период действия"
-			color rgb(65,131,215)
-			font-size 11px
-			position absolute
-			z-index 1
-			top 10px
-			left 15px				
-	&__period-date
-		width 100%
-		padding 30px 15px 10px 
-		border none
-		appearance none
-		background-image url('img/select-logo.png')
-		background-repeat no-repeat
-		background-position 96%
-.subject
-	width 100%
-	display flex
-	justify-content flex-start
-	border-bottom 1px solid #dadfe0
 	&__provider
-		width 40%
 		position relative
-		border-right 1px solid #dadfe0			
+		border-right 1px solid #dadfe0					
 		&::before
 			content "Поставщик"
 			color rgb(65,131,215)
@@ -62,15 +42,13 @@
 			top 10px
 			left 15px
 	&__select-provider
-		width 100%
-		padding 30px 15px 10px 
+		width 500px
+		border none 
 		appearance none
-		border none
 		background-image url('img/select-logo.png')
 		background-repeat no-repeat
 		background-position 96%				
 	&__exposed
-		width 15%
 		position relative
 		border-right 1px solid #dadfe0
 		&::before
@@ -82,11 +60,10 @@
 			top 10px
 			left 15px	 
 	&__exposed-date
-		width 87%
-		border none
-		padding 25px 15px 10px 
+		width 235px
+		border: none;
+		padding: 30px 0 10px 15px;
 	&__duedate
-		width 15%
 		position relative
 		border-right 1px solid #dadfe0
 		&::before
@@ -98,9 +75,15 @@
 			top 10px
 			left 15px		
 	&__duedate-date
-		width 87%
-		padding 25px 15px 10px 
+		width 235px
 		border none
+		padding 30px 0 10px 15px
+.subject
+	width 100%
+	display flex
+	justify-content flex-start
+	border-bottom 1px solid #dadfe0
+	
 	&__calculation
 		width 15%
 		position relative

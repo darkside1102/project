@@ -151,11 +151,7 @@ li {
 .main-menu__link_active {
   color: #fff;
 }
-.container {
-  margin: 15px 65px;
-}
-.subject-info {
-  width: 100%;
+.left-flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -164,11 +160,27 @@ li {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 1000px;
+}
+.bottom-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: 1px solid #dadfe0;
 }
+.container {
+  margin: 15px 65px;
+}
+.subject-info {
+  width: 1000px;
+}
 .subject-info__responsible {
-  width: 70%;
   position: relative;
+  border-bottom: 1px solid #dadfe0;
 }
 .subject-info__responsible::before {
   content: "Ответственный";
@@ -180,9 +192,9 @@ li {
   left: 15px;
 }
 .subject-info__responsible-info {
-  width: 100%;
-  border: none;
+  width: 1000px;
   padding: 30px 15px 10px;
+  border: none;
   background-image: url("img/select-logo.png");
   background-repeat: no-repeat;
   background-position: 98%;
@@ -191,12 +203,12 @@ li {
           appearance: none;
   border-right: 1px solid #dadfe0;
 }
-.subject-info__period {
-  width: 30%;
+.subject-info__provider {
   position: relative;
+  border-right: 1px solid #dadfe0;
 }
-.subject-info__period::before {
-  content: "Период действия";
+.subject-info__provider::before {
+  content: "Поставщик";
   color: #4183d7;
   font-size: 11px;
   position: absolute;
@@ -204,9 +216,8 @@ li {
   top: 10px;
   left: 15px;
 }
-.subject-info__period-date {
-  width: 100%;
-  padding: 30px 15px 10px;
+.subject-info__select-provider {
+  width: 500px;
   border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -214,6 +225,42 @@ li {
   background-image: url("img/select-logo.png");
   background-repeat: no-repeat;
   background-position: 96%;
+}
+.subject-info__exposed {
+  position: relative;
+  border-right: 1px solid #dadfe0;
+}
+.subject-info__exposed::before {
+  content: "Выставлен";
+  color: #4183d7;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+.subject-info__exposed-date {
+  width: 235px;
+  border: none;
+  padding: 30px 0 10px 15px;
+}
+.subject-info__duedate {
+  position: relative;
+  border-right: 1px solid #dadfe0;
+}
+.subject-info__duedate::before {
+  content: "Срок оплаты";
+  color: #4183d7;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+.subject-info__duedate-date {
+  width: 235px;
+  border: none;
+  padding: 30px 0 10px 15px;
 }
 .subject {
   width: 100%;
@@ -226,69 +273,6 @@ li {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-bottom: 1px solid #dadfe0;
-}
-.subject__provider {
-  width: 40%;
-  position: relative;
-  border-right: 1px solid #dadfe0;
-}
-.subject__provider::before {
-  content: "Поставщик";
-  color: #4183d7;
-  font-size: 11px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
-}
-.subject__select-provider {
-  width: 100%;
-  padding: 30px 15px 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  background-image: url("img/select-logo.png");
-  background-repeat: no-repeat;
-  background-position: 96%;
-}
-.subject__exposed {
-  width: 15%;
-  position: relative;
-  border-right: 1px solid #dadfe0;
-}
-.subject__exposed::before {
-  content: "Выставлен";
-  color: #4183d7;
-  font-size: 11px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
-}
-.subject__exposed-date {
-  width: 87%;
-  border: none;
-  padding: 25px 15px 10px;
-}
-.subject__duedate {
-  width: 15%;
-  position: relative;
-  border-right: 1px solid #dadfe0;
-}
-.subject__duedate::before {
-  content: "Срок оплаты";
-  color: #4183d7;
-  font-size: 11px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
-}
-.subject__duedate-date {
-  width: 87%;
-  padding: 25px 15px 10px;
-  border: none;
 }
 .subject__calculation {
   width: 15%;
