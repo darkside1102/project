@@ -1,18 +1,13 @@
-.left-flex
-	display flex
-	justify-content flex-start
-	flex-wrap wrap
-	width 1000px
-.bottom-flex
-	display flex
-	border-bottom 1px solid #dadfe0		
 .container
 	margin 15px 65px
 .subject-info
-	width 1000px
+	width 100%
+	display flex
+	justify-content flex-start
+	border-bottom 1px solid #dadfe0
 	&__responsible
-		position relative
-		border-bottom 1px solid #dadfe0
+		width 70%
+		position relative		
 		&::before
 			content "Ответственный"
 			color rgb(65,131,215)
@@ -22,7 +17,29 @@
 			top 10px
 			left 15px
 	&__responsible-info
-		width 1000px
+		width 100%
+		min-height 50px
+		padding 30px 15px 10px
+		border none
+		background-image url('img/select-logo.png')
+		background-repeat no-repeat
+		background-position 99%
+		appearance none
+		border-right 1px solid #dadfe0
+	&__period
+		width 30%
+		position relative
+		&::before
+			content "Период действия"
+			color rgb(65,131,215)
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px
+	&__period-date
+		width 100%
+		min-height 50px
 		padding 30px 15px 10px
 		border none
 		background-image url('img/select-logo.png')
@@ -30,9 +47,24 @@
 		background-position 98%
 		appearance none
 		border-right 1px solid #dadfe0
+.subject
+	width 100%
+	display flex
+	justify-content flex-start
+	border-bottom 1px solid #dadfe0
+	&__container
+		display flex
+	&__container-left
+		width 70%
+	&__container-right
+		width 30%
+	&__container__inner
+		display flex
+		width 50%
 	&__provider
+		width 100%
 		position relative
-		border-right 1px solid #dadfe0					
+		border-right 1px solid #dadfe0
 		&::before
 			content "Поставщик"
 			color rgb(65,131,215)
@@ -42,80 +74,85 @@
 			top 10px
 			left 15px
 	&__select-provider
-		width 500px
-		border none 
-		appearance none
+		width 100%
+		min-height 59px
+		padding 30px 15px 10px
+		border none
 		background-image url('img/select-logo.png')
 		background-repeat no-repeat
-		background-position 96%				
+		background-position 98%
+		appearance none	
 	&__exposed
+		width 100%
 		position relative
 		border-right 1px solid #dadfe0
-		&::before
-			content "Выставлен"	
+		&::before						
+			content "Выставлен"
 			color rgb(65,131,215)
 			font-size 11px
 			position absolute
 			z-index 1
 			top 10px
-			left 15px	 
+			left 15px
 	&__exposed-date
-		width 235px
-		border: none;
-		padding: 30px 0 10px 15px;
-	&__duedate
-		position relative
-		border-right 1px solid #dadfe0
-		&::before
-			content "Срок оплаты"	
-			color rgb(65,131,215)
-			font-size 11px
-			position absolute
-			z-index 1
-			top 10px
-			left 15px		
-	&__duedate-date
-		width 235px
+		width 100%
 		border none
-		padding 30px 0 10px 15px
-.subject
-	width 100%
-	display flex
-	justify-content flex-start
-	border-bottom 1px solid #dadfe0
-	
-	&__calculation
-		width 15%
+		padding 25px 15px 10px
+		box-sizing border-box
+		min-height 59px
+	&__duedate
+		width 100%
 		position relative
 		border-right 1px solid #dadfe0
 		&::before
-			content "Расчет НДС"	
-			color rgb(65,131,215)
+			content "Срок оплаты"
+			color #4183d7
 			font-size 11px
 			position absolute
 			z-index 1
 			top 10px
-			left 15px	
+			left 15px
+	&__duedate-date
+		width 100%
+		min-height 59px
+		padding 25px 15px 10px
+		border none
+		box-sizing border-box
+	&__calculation
+		width 100%
+		position relative
+		border-right 1px solid #dadfe0
+		&::before
+			content "Расчет НДС"
+			color #4183d7
+			font-size 11px
+			position absolute
+			z-index 1
+			top 10px
+			left 15px
 	&__сalculation-summ
 		width 100%
-		padding 30px 15px 10px 
-		appearance none
+		min-height 59px
+		padding 30px 15px 10px
 		border none
 		background-image url('img/select-logo.png')
 		background-repeat no-repeat
-		background-position 96%
+		background-position 98%
+		appearance none
 	&__acces
-		width 15%
+		width 100%	
 		position relative
 		&::before
-			content "Период доступа"	
-			color #dadfe0
+			content "Период доступа"
+			color #4183d7
 			font-size 11px
 			position absolute
 			z-index 1
 			top 10px
-			left 15px		
+			left 15px			
 	&__acces-date
-		width 87%
-		padding 30px 15px 10px 
-		border none			
+		width 100%
+		padding 25px 15px 10px
+		border none
+		box-sizing border-box
+		min-height 59px								

@@ -151,7 +151,11 @@ li {
 .main-menu__link_active {
   color: #fff;
 }
-.left-flex {
+.container {
+  margin: 15px 65px;
+}
+.subject-info {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -160,27 +164,11 @@ li {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  width: 1000px;
-}
-.bottom-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   border-bottom: 1px solid #dadfe0;
-}
-.container {
-  margin: 15px 65px;
-}
-.subject-info {
-  width: 1000px;
 }
 .subject-info__responsible {
+  width: 70%;
   position: relative;
-  border-bottom: 1px solid #dadfe0;
 }
 .subject-info__responsible::before {
   content: "Ответственный";
@@ -192,7 +180,34 @@ li {
   left: 15px;
 }
 .subject-info__responsible-info {
-  width: 1000px;
+  width: 100%;
+  min-height: 50px;
+  padding: 30px 15px 10px;
+  border: none;
+  background-image: url("img/select-logo.png");
+  background-repeat: no-repeat;
+  background-position: 99%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-right: 1px solid #dadfe0;
+}
+.subject-info__period {
+  width: 30%;
+  position: relative;
+}
+.subject-info__period::before {
+  content: "Период действия";
+  color: #4183d7;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+.subject-info__period-date {
+  width: 100%;
+  min-height: 50px;
   padding: 30px 15px 10px;
   border: none;
   background-image: url("img/select-logo.png");
@@ -202,65 +217,6 @@ li {
      -moz-appearance: none;
           appearance: none;
   border-right: 1px solid #dadfe0;
-}
-.subject-info__provider {
-  position: relative;
-  border-right: 1px solid #dadfe0;
-}
-.subject-info__provider::before {
-  content: "Поставщик";
-  color: #4183d7;
-  font-size: 11px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
-}
-.subject-info__select-provider {
-  width: 500px;
-  border: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("img/select-logo.png");
-  background-repeat: no-repeat;
-  background-position: 96%;
-}
-.subject-info__exposed {
-  position: relative;
-  border-right: 1px solid #dadfe0;
-}
-.subject-info__exposed::before {
-  content: "Выставлен";
-  color: #4183d7;
-  font-size: 11px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
-}
-.subject-info__exposed-date {
-  width: 235px;
-  border: none;
-  padding: 30px 0 10px 15px;
-}
-.subject-info__duedate {
-  position: relative;
-  border-right: 1px solid #dadfe0;
-}
-.subject-info__duedate::before {
-  content: "Срок оплаты";
-  color: #4183d7;
-  font-size: 11px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
-}
-.subject-info__duedate-date {
-  width: 235px;
-  border: none;
-  padding: 30px 0 10px 15px;
 }
 .subject {
   width: 100%;
@@ -274,8 +230,97 @@ li {
           justify-content: flex-start;
   border-bottom: 1px solid #dadfe0;
 }
+.subject__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.subject__container-left {
+  width: 70%;
+}
+.subject__container-right {
+  width: 30%;
+}
+.subject__container__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+.subject__provider {
+  width: 100%;
+  position: relative;
+  border-right: 1px solid #dadfe0;
+}
+.subject__provider::before {
+  content: "Поставщик";
+  color: #4183d7;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+.subject__select-provider {
+  width: 100%;
+  min-height: 59px;
+  padding: 30px 15px 10px;
+  border: none;
+  background-image: url("img/select-logo.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.subject__exposed {
+  width: 100%;
+  position: relative;
+  border-right: 1px solid #dadfe0;
+}
+.subject__exposed::before {
+  content: "Выставлен";
+  color: #4183d7;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+.subject__exposed-date {
+  width: 100%;
+  border: none;
+  padding: 25px 15px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 59px;
+}
+.subject__duedate {
+  width: 100%;
+  position: relative;
+  border-right: 1px solid #dadfe0;
+}
+.subject__duedate::before {
+  content: "Срок оплаты";
+  color: #4183d7;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+.subject__duedate-date {
+  width: 100%;
+  min-height: 59px;
+  padding: 25px 15px 10px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .subject__calculation {
-  width: 15%;
+  width: 100%;
   position: relative;
   border-right: 1px solid #dadfe0;
 }
@@ -290,22 +335,23 @@ li {
 }
 .subject__сalculation-summ {
   width: 100%;
+  min-height: 59px;
   padding: 30px 15px 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border: none;
   background-image: url("img/select-logo.png");
   background-repeat: no-repeat;
-  background-position: 96%;
+  background-position: 98%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .subject__acces {
-  width: 15%;
+  width: 100%;
   position: relative;
 }
 .subject__acces::before {
   content: "Период доступа";
-  color: #dadfe0;
+  color: #4183d7;
   font-size: 11px;
   position: absolute;
   z-index: 1;
@@ -313,7 +359,10 @@ li {
   left: 15px;
 }
 .subject__acces-date {
-  width: 87%;
-  padding: 30px 15px 10px;
+  width: 100%;
+  padding: 25px 15px 10px;
   border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 59px;
 }
