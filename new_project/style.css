@@ -216,7 +216,6 @@ li {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-right: 1px solid #dadfe0;
 }
 .subject {
   width: 100%;
