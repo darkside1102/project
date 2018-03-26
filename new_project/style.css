@@ -181,7 +181,7 @@ li {
 }
 .subject-info__responsible-info {
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
   padding: 30px 15px 10px;
   border: none;
   background-image: url("img/select-logo.png");
@@ -207,7 +207,7 @@ li {
 }
 .subject-info__period-date {
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
   padding: 30px 15px 10px;
   border: none;
   background-image: url("img/select-logo.png");
@@ -264,7 +264,7 @@ li {
 }
 .subject__select-provider {
   width: 100%;
-  min-height: 59px;
+  min-height: 60px;
   padding: 30px 15px 10px;
   border: none;
   background-image: url("img/select-logo.png");
@@ -294,7 +294,7 @@ li {
   padding: 25px 15px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 59px;
+  min-height: 60px;
 }
 .subject__duedate {
   width: 100%;
@@ -312,7 +312,7 @@ li {
 }
 .subject__duedate-date {
   width: 100%;
-  min-height: 59px;
+  min-height: 60px;
   padding: 25px 15px 10px;
   border: none;
   -webkit-box-sizing: border-box;
@@ -334,7 +334,7 @@ li {
 }
 .subject__сalculation-summ {
   width: 100%;
-  min-height: 59px;
+  min-height: 60px;
   padding: 30px 15px 10px;
   border: none;
   background-image: url("img/select-logo.png");
@@ -363,5 +363,84 @@ li {
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 59px;
+  min-height: 60px;
+}
+.requisites-supplier {
+  background-color: #fff;
+  border-bottom: 1px solid #dadfe0;
+}
+.requisites-supplier__caption {
+  font-size: 17px;
+  padding: 15px 0 5px 10px;
+  color: #22313f;
+}
+.invoice-amount {
+  background-color: #fff;
+  min-height: 60px;
+}
+.invoice-amount__list {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.invoice-amount__item1 {
+  padding-right: 100px;
+}
+.invoice-amount__item1::before {
+  content: "К оплате по счету";
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  color: #4183d7;
+  color: #4183d7;
+  font-weight: normal;
+}
+.invoice-amount__item2 {
+  padding-right: 100px;
+}
+.invoice-amount__item2::before {
+  content: "По пролонгации";
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  left: 28, 5%;
+  color: #4183d7;
+  color: #4183d7;
+  font-weight: normal;
+}
+.invoice-amount__item3 {
+  padding-right: 100px;
+}
+.invoice-amount__item3::before {
+  content: "По новым услугам";
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  left: 33, 5%;
+  color: #4183d7;
+  font-weight: normal;
+}
+.invoice-amount__item4 {
+  padding-right: 100px;
+}
+.invoice-amount__item4::before {
+  content: "Оплачено";
+  font-size: 13px;
+  position: absolute;
+  top: 5px;
+  right: 46, 5%;
+  color: #4183d7;
+  font-weight: normal;
+}
+.amount-item {
+  font-weight: bold;
+  font-size: 32px;
 }
